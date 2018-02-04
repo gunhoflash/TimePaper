@@ -4,7 +4,7 @@ const port = process.env.PORT || 5000;
 
 // ejs
 app.set('view engine', 'ejs');
-app.set('views', '/views');
+app.set('views', './views');
 
 app.locals.pretty = true;
 app.use(express.static('public'));
