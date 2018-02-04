@@ -1,0 +1,22 @@
+{
+  "name": "timepaper",
+  "version": "1.0.0",
+  "description": "Make a wallpaper from timetable. Get your wallpaper with [.jpg] or [.png].",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunhoflash/TimePaper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gunhoflash/TimePaper/issues"
+  },
+  "homepage": "https://github.com/gunhoflash/TimePaper#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
