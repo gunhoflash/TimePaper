@@ -16,12 +16,19 @@
 		<link rel="canonical" href="https://timepaper.herokuapp.com/">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
 		
+		<!-- CSS -->
 		<link rel="stylesheet" href="../public/common/css/bootstrap-reboot.min.css">
 		<link rel="stylesheet" href="../public/common/css/bootstrap.min.css">
+
+		<!-- JS -->
 		<script src="../public/common/js/jquery-3.3.1.min.js"></script>
+		<script src="../public/common/js/bootstrap.bundle.min.js"></script>
 		<script src="../public/common/js/bootstrap.min.js"></script>
 	</head>
 	<body>
+
+		<% include common/modal.ejs %>
+
 		<header>
 			<h1>Welcome to TimePaper!</h1>
 		</header>
@@ -42,7 +49,6 @@
 				<div class="tab-pane fade show active" id="lectureList" role="tabpanel" aria-labelledby="lectureList-tab">
 					<p>Added lecture list will be here</p>
 					<p>Add a new lecture here</p>
-					<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">+</button>
 				</div>
 				<div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="design-tab">
 					<p>Select your own design here</p>
@@ -53,84 +59,8 @@
 			</div>
 		</div>
 
-		<!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					  	<h5 class="modal-title" id="exampleModalLabel">Add Lecture</h5>
-					  	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-					  	</button>
-					</div>
-					<div class="modal-body">
-						<div class="input-group mb-3">
-							<div class="input-group-prepend">
-								<span class="input-group-text" id="inputGroup-sizing-default">Lecture</span>
-							</div>
-							<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-						</div>
-						<div class="input-group mb-3">
-							<div class="input-group-prepend">
-								<span class="input-group-text" id="inputGroup-sizing-default">Professor</span>
-							</div>
-							<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-						</div>
-						<div class="input-group mb-3">
-							<div class="input-group-prepend">
-								<span class="input-group-text" id="inputGroup-sizing-default">Place</span>
-							</div>
-							<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-						</div>
-						<div class="input-group mb-3">
-							<div class="input-group-prepend">
-							 	<label class="input-group-text" for="inputGroupSelect01">Time</label>
-							</div>
-							<select class="custom-select" id="inputGroupSelect01">
-							  	<option selected>Day</option>
-							  	<option value="Monday">Monday</option>
-							  	<option value="Tuesday">Tuesday</option>
-							  	<option value="Wednesday">Wednesday</option>
-							  	<option value="Thursday">Thursday</option>
-							  	<option value="Friday">Friday</option>
-							</select>
-							<select class="custom-select" id="inputGroupSelect01">
-								<option selected>Start</option>
-								<option value="0">0</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>  
-							</select>
-							~
-							<select class="custom-select" id="inputGroupSelect01">
-								<option selected>End</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="0">9</option> 
-							</select>
-						</div>
-					</div>
-					<div class="modal-footer">
-					  	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					  	<button type="button" class="btn btn-primary">Save changes</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Modal End -->
-
 		<div class="container">
+			<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">+</button>
 			<table class="table">
 				<thead>
 					<tr>
