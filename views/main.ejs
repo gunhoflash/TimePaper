@@ -24,6 +24,8 @@
 		<script src="../public/common/js/jquery-3.3.1.min.js"></script>
 		<script src="../public/common/js/bootstrap.bundle.min.js"></script>
 		<script src="../public/common/js/bootstrap.min.js"></script>
+		<script type = "text/javascript" src="../public/common/js/modal.js"></script>
+
 	</head>
 	<body>
 
@@ -63,7 +65,7 @@
 				<div class="my-3">
 					<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">+</button>
 				</div>
-				<table class="table">
+				<table class="table" id="timetable">
 					<thead>
 						<tr>
 							<th scope="col">#</th>
@@ -79,7 +81,7 @@
 						<% for (var i = 0; i < 10; i++) { %>
 							<tr><th scope="row"><%= i %></th>
 								<% for (var j = 0; j < 6; j++) { %>
-									<td></td>
+									<td>hi</td>
 								<% } %>
 							</tr>
 						<% } %>
@@ -87,5 +89,18 @@
 				</table>
 			</div>
 		</div>
+		<!--<script>
+		
+			$(".table tr").click(function(){
+				var str = "hello"
+				var tr = $(this);
+				var td = tr.children();
+				td.each(function(i){
+					console.log(td.eq(i).text("hello"));
+				})
+				alert("End");
+			})
+		
+		</script>-->
 	</body>
 </html>
