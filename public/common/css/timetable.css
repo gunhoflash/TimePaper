@@ -4,3 +4,4 @@
 #timetable.mon-to-sat tr > *:nth-child(1){width: 10%;}
 #timetable.mon-to-fri tr > *{width: 18%;}
 #timetable.mon-to-fri tr > *:nth-child(1){width: 10%;}
+#timetable.mon-to-fri tr > *:last-child{display: none;}
