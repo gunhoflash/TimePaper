@@ -1,1 +1,6 @@
 .class-box {width:30px}
+
+#timetable.mon-to-sat tr > *{width: 15%;}
+#timetable.mon-to-sat tr > *:nth-child(1){width: 10%;}
+#timetable.mon-to-fri tr > *{width: 18%;}
+#timetable.mon-to-fri tr > *:nth-child(1){width: 10%;}
