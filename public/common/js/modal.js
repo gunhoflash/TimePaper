@@ -7,10 +7,17 @@ $(document).ready(function(){
 		td.each(function(i){
 			console.log(td.eq(i).text("hello"));
 		})*/
+		var string = "<div class=\"class-box\" style=\"height:";
+		var name = $("#lecture").val();
 		var day = $("#inputDay option:selected").val();
 		var start = $("#inputStartTime option:selected").val();
 		var end = $("#inputEndTime option:selected").val();
-		timetable.rows[start].cells[day].innerHTML = "this!";
-		console.log($("#inputStartTime option:selected").val());
+		var time = end-start;
+		string += time*100;
+		string += "%;\">";
+		string += name;
+		string += "</div>";
+		timetable.rows[start].cells[day].innerHTML = string;
+		console.log(time);
 	})
 })

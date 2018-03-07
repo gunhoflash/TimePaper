@@ -1,6 +1,13 @@
-.class-box {width:30px}
+.class-box {    
+	width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+	left: 0px;
+}
 
-#timetable.mon-to-sat tr > *{width: 15%;}
+#timetable.mon-to-sat tr > *{width: 15%; position: relative}
 #timetable.mon-to-sat tr > *:nth-child(1){width: 10%;}
 #timetable.mon-to-fri tr > *{width: 18%;}
 #timetable.mon-to-fri tr > *:nth-child(1){width: 10%;}
