@@ -13,7 +13,11 @@ $(document).ready(function(){
 		var start = $("#inputStartTime option:selected").val();
 		var end = $("#inputEndTime option:selected").val();
 		var time = end-start;
-		string += time*100;
+		if(time < 0)
+		{
+			alert("time error");
+		}
+		string += time*100+100;
 		string += "%;\">";
 		string += name;
 		string += "</div>";
