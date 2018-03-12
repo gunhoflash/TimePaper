@@ -25,6 +25,7 @@
 		<script src="../public/common/js/jquery-3.3.1.min.js"></script>
 		<script src="../public/common/js/bootstrap.bundle.min.js"></script>
 		<script src="../public/common/js/bootstrap.min.js"></script>
+		<script src="../public/common/js/html2canvas.min.js"></script>
 		<script type = "text/javascript" src="../public/common/js/modal.js"></script>
 
 	</head>
@@ -65,6 +66,7 @@
 			<div class="container-fluid my-3">
 				<div class="my-3">
 					<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">+</button>
+					<button type="button" class="btn btn-outline-primary" id="save">SAVE</button>
 				</div>
 				<table class="table mon-to-sat" id="timetable">
 					<thead>
@@ -88,6 +90,7 @@
 						<% } %>
 					</tbody>
 				</table>
+				<img src='' alt='' id='img' />
 			</div>
 		</div>
 	</body>
