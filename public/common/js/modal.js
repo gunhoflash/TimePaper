@@ -10,12 +10,12 @@ $(document).ready(function(){
 		{
 			alert("time error");
 		}
-		string += time*100+100;
-		string += "%;\">";
+		string += (time*100+100)*0.49;
+		string += "px;\">";
 		string += name;
 		string += "</div>";
 		timetable.rows[start].cells[day].innerHTML = string;
-		console.log(time);
+		console.log(string);
 	})
 
 	$('#captureModal').click(function(){
