@@ -18,7 +18,7 @@ $(document).ready(function(){
 		console.log(time);
 	})
 
-	$('#save').click(function(){
+	$('#captureModal').click(function(){
 		console.log("html2canvas");
 		html2canvas($('#timetable').get(0)).then(function(canvas)
 		{
