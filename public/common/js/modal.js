@@ -24,6 +24,7 @@ $(document).ready(function(){
 		{
 			var img = canvas.toDataURL("image/png", 1);
 			$('#img').attr('src', img);
+			$('#download').attr('href', img);
 		})
 	})
 })
