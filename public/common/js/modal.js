@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+
 	$(".btn.btn-primary").click(function(){
 		var string = "<div class=\"class-box\" style=\"height:";
 		var name = $("#lecture").val();
@@ -11,8 +11,8 @@ $(document).ready(function(){
 		{
 			alert("time error");
 		}
-		string += (time*100+100)*0.49;
-		string += "px;\">";
+		string += time*100+100;
+		string += "%;\">";
 		string += name;
 		string += "</div>";
 		timetable.rows[start].cells[day].innerHTML = string;
