@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	$(".btn.btn-primary").click(function(){
 		var string = "<div class=\"class-box\" style=\"height:";
 		var name = $("#lecture").val();
